@@ -18,7 +18,7 @@ class CashRegister # defining the CashRegister class
 
   def apply_discount # this instant method  is going to be the part where discount will be applied if it applicable
     if discount != 0 # we use the conditional statement if to see if the discount "is not" equal to 0 ( but using the not equal sign != - this negates it being equal) - hench if there is a discount it will be a number other than 0 and then we will go ahead and apply this - but if it is equal to 0 we will continue with the else statement
-      self.total = (total * ((100.0 - discount.to_f)/100)).to_i # using the self method to bring in our current total of our instance and setting this equal the discount being taken off - we will times our title by this (100.0 - discount.to_f)/100) which is just defining the percentage taken, by pulling in the discount method and setting it to a float number. - then after this discount is made and times by total we set the number back to an integer by using to_i
+      self.total = (total * ((100.0 - discount.to_f)/100)).to_i # using the self method to bring in our current total of our instance and setting this equal the discount being taken off - we will times our title by this (100.0 - discount.to_f)/100) which is just defining the percentage taken, by pulling in the discount method and setting it to a float number. - then after this discount is made and times by total we set the number back to an integer by using to_i( simply cause this whats the test asks for )
       "After the discount, the total comes to $#{self.total}." # this string will then be printed bring in the new discounted total from above
     else # if discount is = to 0 then we do this...
       "There is no discount to apply." # print this string
